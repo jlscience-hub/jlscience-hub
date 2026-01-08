@@ -1,158 +1,262 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juan Li 李娟 | Science Writing Portfolio</title>
-  <meta name="description" content="Juan Li (李娟) 博士，生命科学博士，科学记者与医学写作者，精选科普与深度报道作品集" />
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, "Noto Sans", "PingFang SC",
-        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-      margin: 0;
-      background: #fafafa;
-      color: #222;
-      line-height: 1.7;
-    }
-    header {
-      background: #111;
-      color: #fff;
-      padding: 3rem 1.5rem;
-    }
-    header h1 {
-      margin: 0 0 0.5rem 0;
-      font-size: 2.2rem;
-    }
-    header p {
-      max-width: 900px;
-      opacity: 0.9;
-    }
-    main {
-      max-width: 1000px;
-      margin: 2.5rem auto;
-      padding: 0 1.5rem;
-    }
-    section {
-      margin-bottom: 4rem;
-    }
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-      margin-bottom: 2rem;
-      font-size: 1.8rem;
-    }
-    article {
-      margin-bottom: 2.2rem;
-      padding-bottom: 1.8rem;
-      border-bottom: 1px solid #e5e5e5;
-    }
-    article h3 {
-      margin: 0 0 0.6rem 0;
-      font-size: 1.2rem;
-    }
-    article p {
-      margin: 0.3rem 0 0.6rem 0;
-      color: #333;
-    }
-    article a {
-      color: #0056b3;
-      text-decoration: none;
-    }
-    article a:hover {
-      text-decoration: underline;
-    }
-    .about p {
-      max-width: 900px;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #666;
-      border-top: 1px solid #ddd;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>李娟博士科普作品集 / Juan Li PhD Science Articles</title>
+<style>
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0; background:#fefefe; color:#111; line-height:1.6; transition: all 0.3s;}
+header { background: linear-gradient(to right,#4b6cb7,#182848); color:#fff; padding:40px 20px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.15);}
+header h1 { margin:0; font-size:2.5rem; font-weight:700;}
+header p { margin:10px 0 0; font-size:1.1rem; opacity:0.85;}
+header button { margin-top:15px; padding:8px 16px; font-size:1rem; border:none; border-radius:4px; background:#fff; color:#182848; cursor:pointer; font-weight:600;}
+header button:hover { opacity:0.9;}
+main { max-width:1000px; margin:40px auto; padding:0 20px;}
+h2 { border-bottom:2px solid #4b6cb7; padding-bottom:5px; margin-top:40px; margin-bottom:20px; color:#182848;}
+article { margin-bottom:30px; padding-bottom:15px; border-bottom:1px solid #ddd;}
+article h3 { margin:0 0 10px; font-size:1.2rem; color:#4b6cb7;}
+article p { margin:5px 0;}
+article a { color:#4b6cb7; text-decoration:none;}
+article a:hover { text-decoration:underline;}
+.more-articles ul { list-style:none; padding-left:0;}
+.more-articles li { padding:6px 0; border-bottom:1px dotted #ccc;}
+footer { text-align:center; padding:30px 20px; font-size:0.9rem; color:#555;}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Juan Li 李娟 博士</h1>
-    <p>
-      Science Journalist & Medical Writer · PhD in Life Sciences<br />
-      科学记者｜医学与生命科学写作者
-    </p>
-  </header>
 
-  <main>
-    <section>
-      <h2>Selected Science Writing / 科普文章精选</h2>
+<header>
+  <h1 id="page-title">李娟博士科普作品集</h1>
+  <p id="page-subtitle">Science Communication & Articles by Juan Li, PhD</p>
+  <button onclick="toggleLanguage()" id="langBtn">切换到英文</button>
+</header>
 
-      <article>
-        <h3>一起真实案例曝出可怕细节：AI如何两次把人“逼疯”</h3>
-        <p>
-          本文深入剖析一起真实案例，揭示“技术介导的二联性精神病”，探讨高度个性化 AI 对话如何放大妄想并危及心理健康。
-        </p>
-        <a href="https://news.qq.com/rain/a/20251229A01YC600" target="_blank">阅读全文 →</a>
-      </article>
+<main>
 
-      <article>
-        <h3>加拿大批准克隆肉进超市，美国网友破防</h3>
-        <p>
-          加拿大将克隆肉纳入普通食品监管体系，引发公众对食品安全、伦理与科学风险认知的广泛讨论。
-        </p>
-        <a href="https://cj.sina.com.cn/articles/view/1618051664/60718250027019gdw" target="_blank">阅读全文 →</a>
-      </article>
+<h2 id="section-featured">精选文章 / Featured Articles</h2>
 
-      <article>
-        <h3>科学家重新定义肥胖，你一直在用的“金指标”要变了</h3>
-        <p>
-          BMI 正在被医学界重新审视，肥胖被定义为一种基于脂肪组织功能受损的慢性疾病。
-        </p>
-        <a href="https://www.kepuchina.cn/article/articleinfo?ar_id=579418" target="_blank">阅读全文 →</a>
-      </article>
+<div id="articles"></div>
 
-      <article>
-        <h3>7岁血癌女孩绝境逢生：CAR‑T 为何成为最后希望</h3>
-        <p>
-          通过真实病例讲述 CAR‑T 细胞治疗如何从科学构想走向改变癌症治疗格局的革命性技术。
-        </p>
-        <a href="https://www.kepuchina.cn/article/articleinfo?ar_id=648657" target="_blank">阅读全文 →</a>
-      </article>
+<h2 id="section-more">更多文章 / More Articles</h2>
+<div class="more-articles">
+  <ul id="moreList"></ul>
+</div>
 
-      <article>
-        <h3>接种新冠 mRNA 疫苗后，肿瘤意外消退</h3>
-        <p>
-          Nature 研究显示 mRNA 疫苗可激活先天免疫，为癌症免疫治疗提供新思路。
-        </p>
-        <a href="https://www.163.com/dy/article/KDGTH0SI05327918.html" target="_blank">阅读全文 →</a>
-      </article>
+<h2 id="section-about">作者简介 / About</h2>
+<div id="about"></div>
 
-      <article>
-        <h3>猪肺成功移植人体，异种器官移植走到哪一步了？</h3>
-        <p>
-          中国团队完成基因编辑猪肺人体移植实验，验证异种器官移植的可行性与挑战。
-        </p>
-        <a href="https://cloud.kepuchina.cn/newSearch/imgText?id=7370579367073513472" target="_blank">阅读全文 →</a>
-      </article>
+<footer>
+  <p>&copy; 2026 Juan Li 博士 / All Rights Reserved</p>
+</footer>
 
-    </section>
+<script>
+const languageData = {
+  zh: {
+    langBtn: "切换到英文",
+    sectionFeatured: "精选文章",
+    sectionMore: "更多文章",
+    sectionAbout: "作者简介",
+    aboutText: `
+<p>Juan Li 博士是一位资深科学记者及医学撰稿人，拥有生命科学博士学位。她的工作聚焦于生物医学研究、公共卫生政策及其对人类现实生活的影响……（可扩展全文）</p>
+`
+  },
+  en: {
+    langBtn: "Switch to Chinese",
+    sectionFeatured: "Featured Articles",
+    sectionMore: "More Articles",
+    sectionAbout: "About / Author Statement",
+    aboutText: `
+<p>Juan Li, PhD, is a senior science journalist and medical writer with a background in life sciences. Her work focuses on biomedical research, public health policy, and real-world consequences…(full text can be added)</p>
+`
+  }
+};
 
-    <section class="about">
-      <h2>About / Author Statement</h2>
-      <p>
-        I am a science journalist and medical writer with a PhD in life sciences. My work focuses on the intersection of biomedical research, public health policy, and real‑world human consequences.
-      </p>
-      <p>
-        Trained as a researcher and working as a long‑form nonfiction writer, I aim to translate complex scientific evidence into rigorous, accessible narratives without oversimplifying uncertainty.
-      </p>
-      <p>
-        Juan Li 博士拥有发育生物学博士学位，曾在国际医学院和顶尖临床研究机构接受系统科研训练。她长期从事科学传播与医学写作，致力于将前沿科研成果转化为高质量公共知识。
-      </p>
-    </section>
-  </main>
+// 22篇文章数据
+const articlesData = [
+  {zhTitle:"一起真实案例曝出可怕细节：AI如何两次把人“逼疯”", 
+   enTitle:"Real Case Reveals Shocking Details: How AI Drove a Person 'Crazy' Twice", 
+   zhAbstract:"本文深入剖析了一起令人震惊的真实案例：一名医护人员在与AI聊天过程中两次陷入急性精神障碍。这种现象被科学家定义为“技术介导的二联性精神病”，揭示了高度个性化的人机互动如何演变成危险的“单人回音室”。研究指出，AI聊天机器人为了“让用户满意”，天然倾向于顺从和迎合，而非提供现实校正。当人类的拟人化倾向与AI的肯定性反馈叠加，用户可能会陷入被技术放大后的偏执念头回路，将心灵慰藉变成精神陷阱。这一发现为我们敲响了警钟：在AI日益融入日常生活的今天，我们不仅需要关注其功能性，更需警惕其对人类心理健康的潜在威胁。", 
+   link:"https://news.qq.com/rain/a/20251229A01YC600"},
+   
+  {zhTitle:"加拿大批准克隆肉进超市，美国网友破防：我们可能吃很久了", 
+   enTitle:"Canada Approves Clone Meat for Supermarkets, Americans Shocked: We Might Have Been Eating It for a Long Time", 
+   zhAbstract:"2025年秋，加拿大正式认可克隆肉为普通食品，允许其在不加特殊标签的情况下进入超市货架。这一决策引发了公众对食品安全和伦理的广泛讨论，也让人们重新审视这项早已在农业界应用的成熟技术。克隆肉并非实验室合成肉，而是来自通过体细胞核移植技术培育的动物。科学评估显示，健康克隆动物的产品在营养成分上与普通产品并无二致。尽管科学界给出了安全背书，但消费者对于“复制食品”的心理隔阂依然存在。", 
+   link:"https://cj.sina.com.cn/articles/view/1618051664/60718250027019gdw?froms=ggmp"},
+   
+  {zhTitle:"科学家重新定义肥胖，你一直在用的“金指标”要变了", 
+   enTitle:"Scientists Redefine Obesity: The 'Golden Standard' You Rely On Is Changing", 
+   zhAbstract:"长期被视为衡量肥胖“金标准”的BMI（身体质量指数）正面临前所未有的挑战。最新科学共识指出，BMI无法区分肌肉与脂肪，也无法反映脂肪分布，已不再适合作为临床诊断个体肥胖的唯一指标。新的诊断体系提出了“临床肥胖症”的概念，将重点从单纯的体重数字转向脂肪组织对机体造成的实际功能损害。这一转变不仅有助于减少社会对肥胖者的污名化，更推动了医学界向精准医疗迈进。", 
+   link:"https://www.kepuchina.cn/article/articleinfo?business_type=100&classify=0&ar_id=579418"},
+   
+  {zhTitle:"7岁血癌女孩绝境逢生，这项疗法为何成为“最后希望”？", 
+   enTitle:"7-Year-Old Leukemia Patient Survives: Why This Therapy Became the 'Last Hope'", 
+   zhAbstract:"Emily Whitehead的抗癌奇迹让CAR-T疗法走进了大众视野。作为一种“活的药物”，这种革命性的细胞基因治疗技术通过改造患者自身的T细胞，使其成为能精准识别并消灭癌细胞的“生物导弹”。尽管Emily在治疗过程中经历了严重的免疫风暴，但科学家的及时干预让她最终获得了完全缓解。这一案例不仅证明了CAR-T疗法的巨大潜力，也为无数血液癌症患者带来了重生的希望。", 
+   link:"https://www.kepuchina.cn/article/articleinfo?business_type=100&classify=0&ar_id=648657"},
+   
+  {zhTitle:"接种新冠mRNA疫苗后，肿瘤意外消退！Nature研究证实其效果", 
+   enTitle:"Unexpected Tumor Regression After COVID-19 mRNA Vaccination Confirmed by Nature Study", 
+   zhAbstract:"《自然》杂志发表的一项重磅研究发现，新冠mRNA疫苗在预防病毒之余，竟能作为强大的通用免疫调节剂，系统性地唤醒机体的抗肿瘤免疫力。临床数据显示，接种疫苗的癌症患者生存期显著延长。这一发现为癌症免疫治疗开辟了全新的低成本路径，为设计更优的通用型免疫辅助药物提供了重要启示。", 
+   link:"https://www.163.com/dy/article/KDGTH0SI05327918.html"},
+   
+  {zhTitle:"继心肝肾后，猪肺也成功移植人体，异种器官移植还要走多远的路？", 
+   enTitle:"After Heart, Liver, and Kidney, Pig Lung Successfully Transplanted into Human: How Far is Xenotransplantation?", 
+   zhAbstract:"2025年8月，中国科研团队成功将基因编辑猪肺移植到一名脑死亡受体体内，并实现长达九天的通气与气体交换。猪肺被认为是异种移植中最复杂的器官之一，研究人员通过精密的基因编辑技术敲除排斥基因，并敲入人类保护性基因。实验成功验证了技术可行性，异种移植正从科幻走向现实。", 
+   link:"https://cloud.kepuchina.cn/newSearch/imgText?id=7370579367073513472"},
+   
+  {zhTitle:"90多岁的女儿仍健康，117岁老人捐出自己的长寿“密码”", 
+   enTitle:"117-Year-Old Donates Longevity 'Secret', Daughter in Her 90s Still Healthy", 
+   zhAbstract:"全球最长寿老人Maria Branyas Morera以117岁高龄离世，她留下的生物样本为科学家解锁“健康衰老”提供了珍贵线索。研究发现，她的长寿是遗传、代谢与肠道菌群共同作用的结果。其肠道菌群多样性远超同龄人，生物年龄比实际年龄年轻近十岁，为健康衰老研究提供新思路。", 
+   link:"https://www.163.com/dy/article/KD1H58DC05327918.html"},
+   
+  {zhTitle:"诺和诺德与开普乐生物的跨境收购纠纷：临床不确定性的教训", 
+   enTitle:"Novo Nordisk and KBP Cross-Border Acquisition Dispute: Lessons from Clinical Uncertainty", 
+   zhAbstract:"深度报道剖析制药巨头诺和诺德与中国生物科技公司开普乐之间高达13亿美元的收购纠纷。争议核心在临床数据披露义务与中期分析结果解读差异，折射出生命科学领域面对科学不确定性时的商业风险。", 
+   link:"https://www.pharmadj.com/ssr/en/article/1980099002068201474"},
+   
+  {zhTitle:"3900万新病例？儿童肥胖正在改写一代中国人的健康轨迹", 
+   enTitle:"39 Million New Cases? Childhood Obesity is Reshaping a Generation in China", 
+   zhAbstract:"中国正面临严峻的儿童肥胖危机。研究显示，肥胖病例快速上升且呈现“农村包围城市”趋势。含糖饮料、父母遗传与睡眠不足为关键风险因素。童年肥胖具有“轨迹效应”，会影响成年后健康。防控需从生命早期干预，依赖家庭与政策支持。", 
+   link:"https://news.qq.com/rain/a/20250908A03NSY00"},
+   
+  {zhTitle:"鱼儿性别紊乱，秃鹫肾衰竭，这个杀手还要制造多少生态灾难？", 
+   enTitle:"Fish Gender Disorder, Vulture Kidney Failure: How Much More Ecological Disaster Will This Killer Cause?", 
+   zhAbstract:"药物作为新兴污染物进入自然环境，成为野生动物隐形杀手。水域药物超标引发生态连锁反应，从鱼类性别改变到秃鹫大灭绝。药物污染破坏生物多样性，也危及人类健康，需推动绿色制药与污水处理升级。", 
+   link:"https://news.qq.com/rain/a/20250221A03A7U00"},
+   
+  {zhTitle:"如何拯救食物过敏者的餐桌？", 
+   enTitle:"How to Rescue the Table for Food Allergy Patients?", 
+   zhAbstract:"全球食物过敏发病率上升，传统“被动回避”影响生活质量。科学家利用CRISPR基因编辑改造小麦、花生、大豆过敏原，培育低免疫原性作物，降低过敏风险，为食物过敏者提供更多选择。", 
+   link:"https://iscientists.blog.caixin.com/archives/281745"},
+   
+  {zhTitle:"跨越时空的科学对话：现代科学解开160年前的遗传学密码", 
+   enTitle:"Cross-Time Scientific Dialogue: Modern Science Deciphers 160-Year-Old Genetics", 
+   zhAbstract:"160年前孟德尔奠定遗传学基础，如今科研团队利用基因组学破解豌豆七性状的分子机制，建立庞大遗传数据库，为精准育种提供基因资源，古老豌豆焕发新生。", 
+   link:"https://cloud.kepuchina.cn/newSearch/imgText?id=7326654547563003904"},
+   
+  {zhTitle:"钛合金：医疗领域的“万能金属”是如何炼成的？", 
+   enTitle:"Titanium Alloy: How the 'Universal Metal' of Medicine is Made", 
+   zhAbstract:"钛合金因生物相容性、高强度与耐腐蚀性被誉为医疗“万能金属”。通过诱导免疫系统进入修复模式，它与骨组织完美整合，为骨科、牙科患者提供可靠植入物，未来可具更强生物活性。", 
+   link:"https://cloud.kepuchina.cn/newSearch/imgText?id=7347674783378661376"},
+   
+  {zhTitle:"预防痴呆应该怎么吃？最新科学研究告诉你", 
+   enTitle:"How to Eat to Prevent Dementia? Latest Scientific Research Reveals", 
+   zhAbstract:"研究表明约45%的痴呆风险可通过饮食和生活方式改变。浙江大学团队提出“MODERN饮食”，强调橄榄油、绿叶菜、浆果，远离含糖饮料，能显著降低痴呆风险并改善心理健康。", 
+   link:"https://cloud.kepuchina.cn/newSearch/imgText?id=7354982167336841216"},
+   
+  {zhTitle:"科学家重新定义肥胖，你一直在用的金指标要变了（主题深化）", 
+   enTitle:"Scientists Redefine Obesity: The Golden Standard You Rely On (In-Depth)", 
+   zhAbstract:"BMI局限性成为共识。新定义强调肥胖为脂肪受损慢性疾病，诊断应关注健康损害，通过腰围、体脂率和代谢指标精准评估个体风险，有助消除社会偏见，关注整体生活质量。", 
+   link:"https://news.qq.com/rain/a/20250214A02YM300"},
+   
+  {zhTitle:"挑战40年权威理论，Science子刊：智慧生命诞生或是一种必然", 
+   enTitle:"Challenging 40-Year Authority Theory: Emergence of Intelligent Life May Be Inevitable", 
+   zhAbstract:"《科学进展》研究提出智慧生命演化可能受环境驱动必然出现。地球系统条件设定环境门槛，一旦成熟，生命顺着进化阶梯发展，为地外生命搜寻提供新视角。", 
+   link:"https://news.qq.com/rain/a/20250317A039IE00"},
+   
+  {zhTitle:"这种新药堪称“抗癌导弹”，它是如何改变癌症治疗的？", 
+   enTitle:"This New Drug Is a 'Cancer Missile': How It Changes Cancer Therapy", 
+   zhAbstract:"抗体偶联药物（ADC）实现精准打击肿瘤细胞，最大限度保护正常细胞。通过导航、保险与弹头三位一体结构，ADC瓦解顽固癌细胞并产生旁观者效应，引领癌症治疗新时代。", 
+   link:"https://news.qq.com/rain/a/20250401A09N9700"},
+   
+  {zhTitle:"科学家从自家后院挖到“宝”，发了篇Nature", 
+   enTitle:"Scientists Found 'Treasure' in Backyard, Published in Nature", 
+   zhAbstract:"加拿大团队在自家土壤发现新抗生素Lariocidin，可精准打击耐药菌。尽管距离临床仍远，但为全球耐药性危机提供新曙光，提醒自然界仍是创新药物宝库。", 
+   link:"https://news.qq.com/rain/a/20250408A03BOP00"},
+   
+  {zhTitle:"仅靠空腹抽血，不能良好评估代谢健康，中国科学家给出新方法", 
+   enTitle:"Fasting Blood Alone Cannot Assess Metabolic Health, Chinese Scientists Offer New Method", 
+   zhAbstract:"传统体检只关注空腹指标不足以评估代谢能力。双维度健康模型引入稳态适应评分，可动态评估餐后代谢变化，为个性化营养和早期疾病预防提供精准工具。", 
+   link:"https://news.qq.com/rain/a/20250504A02XX800"},
+   
+  {zhTitle:"人们宁愿养狗，也不生娃？背后的科学解释找到了", 
+   enTitle:"People Prefer Dogs to Babies? The Scientific Explanation Found", 
+   zhAbstract:"全球生育率下降，宠物狗成为许多家庭情感核心。研究显示狗与人类幼儿情感依恋相似，养狗提供易控、即时反馈的情感满足，形成新生活方式与宠物经济现象。", 
+   link:"https://news.qq.com/rain/a/20250609A03SF600"},
+   
+  {zhTitle:"跟着视频学了17个小时，它就能独立主刀做手术", 
+   enTitle:"After 17 Hours of Video Learning, It Can Perform Surgery Independently", 
+   zhAbstract:"AI机器人SRT-H通过观看手术视频17小时即可独立完成复杂操作。具备双层大脑，一层理解视觉场景，一层精准执行动作，标志手术机器人从辅助工具迈向自主执行体。", 
+   link:"https://news.qq.com/rain/a/20250811A02NSZ00"},
+   
+  {zhTitle:"给大脑补“锂”后，丢失的记忆力奇迹般恢复了", 
+   enTitle:"Memory Miraculously Restored After Lithium Supplementation", 
+   zhAbstract:"哈佛医学院研究揭示锂在阿尔茨海默病中关键作用。患者大脑锂缺乏激活有害分子开关，加速蛋白沉积。补充特殊锂可恢复记忆，为早期防治提供新方向。", 
+   link:"https://news.qq.com/rain/a/20250829A04S5M00"}
 
-  <footer>
-    © Juan Li 李娟 · Science Writing Portfolio
-  </footer>
+  { zhTitle: "跨界交叉，颠覆式医疗创新的秘诀？——梳理本草资本投资逻辑和交叉创新投资案例", enTitle: "Disruptive Medical Innovation Through Cross-Boundary Investment: Lessons from Bencao Capital", date: "2021-08-11", platform: "本草圈" },
+  { zhTitle: "化学防晒剂会进入血液，夏季如何安全防晒？", enTitle: "Chemical Sunscreens Enter the Bloodstream: How to Protect Yourself Safely in Summer", date: "2020-05-18", platform: "健康学人" },
+  { zhTitle: "王辰团队详解：武汉16家方舱医院，在防控新冠中发挥了怎样的作用？", enTitle: "Inside Wuhan’s 16 Fangcang Hospitals: Their Role in COVID-19 Control", date: "2020-04-22", platform: "知识分子" },
+  { zhTitle: "历经数个艰苦阶段，武汉为全球防疫提供了哪些宝贵经验？", enTitle: "Hard-Earned Lessons from Wuhan: What China Contributed to Global COVID-19 Control", date: "2020-04-12", platform: "知识分子" },
+  { zhTitle: "出院复阳难题，也许可以试试血清学检测", enTitle: "Post-Discharge COVID Relapses: Could Serological Testing Be the Answer?", date: "2020-03-12", platform: "赛先生" },
+  { zhTitle: "世卫：战胜新冠病毒，哪些科研问题亟待解决？", enTitle: "WHO: Key Scientific Questions That Must Be Solved to Defeat COVID-19", date: "2020-03-07", platform: "健康学人" },
+  { zhTitle: "多国撤侨人群中检出新冠病毒感染者，武汉的感染规模预计有多大？", enTitle: "COVID-19 Found Among Evacuees: How Large Was the Outbreak in Wuhan?", date: "2020-02-14", platform: "赛先生" },
+  { zhTitle: "癌症靶点研究有哪些不靠谱？诺奖得主指出常见问题", enTitle: "Nobel Laureate Points Out Pitfalls in Cancer Target Research", date: "2019-12-02", platform: "返朴" },
+  { zhTitle: "常喝甜饮料或纯果汁需警惕癌症风险升高", enTitle: "Sugary Drinks and Pure Juice Linked to Higher Cancer Risk", date: "2019-07-24", platform: "知识分子" },
+  { zhTitle: "胃肠道病早发现：可吞咽设备的未来", enTitle: "Early GI Disease Detection with Swallowable Devices: The Future of Diagnostics", date: "2019-03-27", platform: "中国科普博览" },
+  { zhTitle: "好消息！健康学人们迎来好机遇，5万人基因外显子组数据全球共享！", enTitle: "Global Release of 50,000 Human Exomes: A Boon for Health Researchers", date: "2019-03-18", platform: "健康学人" },
+  { zhTitle: "愈发普遍的食物过敏，你中招了吗？", enTitle: "Food Allergies on the Rise: Are You Affected?", date: "2019-03-07", platform: "中国科普博览" },
+  { zhTitle: "这个研究说：吃坚果有益于糖尿病患者的心脏健康", enTitle: "Study Finds Nuts Improve Heart Health in Diabetes Patients", date: "2019-03-01", platform: "知识分子" },
+  { zhTitle: "重大更新：中英科学家将抗心律失常药物重新分类", enTitle: "Major Update: Chinese and British Scientists Reclassify Antiarrhythmic Drugs", date: "2018-10-27", platform: "知识分子" },
+  { zhTitle: "为什么患有过敏性鼻炎的人也易发哮喘？", enTitle: "Why Allergic Rhinitis Patients Are Prone to Asthma", date: "2018-09-16", platform: "健康学人" },
+  { zhTitle: "五千人的研究数据告诉你：男女大脑真不同", enTitle: "Study of 5,000 Brains Shows Significant Male-Female Differences", date: "2018-08-17", platform: "健康学人" },
+  { zhTitle: "炎症疾病不可小觑，竟与心血管发病风险有关", enTitle: "Inflammatory Diseases Linked to Cardiovascular Risk", date: "2018-07-24", platform: "健康学人" },
+  { zhTitle: "想要拥有彭于晏同款肌肉？膳食蛋白要足够", enTitle: "Want Muscles Like Eddie Peng? Make Sure You Get Enough Dietary Protein", date: "2018-07-19", platform: "健康学人" },
+  { zhTitle: "哪些生活习惯可让糖尿病患者获益？", enTitle: "Everyday Habits That Benefit Diabetes Patients", date: "2018-06-18", platform: "知识分子" },
+  { zhTitle: "哪种饮食方式最健康：地中海饮食夺冠，生酮饮食垫底", enTitle: "Which Diet Is Healthiest? Mediterranean Ranks Top, Keto at the Bottom", date: "2018-01-14", platform: "知识分子" },
+  { zhTitle: "近千种食物营养排名，猪油排第八？", enTitle: "Ranking Nearly 1,000 Foods: Why Is Lard in the Top Ten?", date: "2018-04-13", platform: "知识分子" },
+  { zhTitle: "少肥肉或少主食，哪个更减肥？答案可能出人意料", enTitle: "Cut Fat or Cut Carbs: Which Works Better for Weight Loss? The Surprising Answer", date: "2018-03-17", platform: "知识分子" },
+  { zhTitle: "中华华刷屏外媒：中国克隆猕猴今天登上 Cell 和各大头条", enTitle: "Chinese Cloned Monkeys Make Global Headlines in Cell", date: "2018-01-25", platform: "知社学术圈" },
+  { zhTitle: "备孕有多重要：受孕前父母的饮食和生活方式关乎子女健康", enTitle: "Pre-Conception Diet and Lifestyle Shape Children’s Health", date: "2018-04-18", platform: "知社学术圈" },
+  { zhTitle: "贪杯影响预期寿命，合适的饮酒量是多少？", enTitle: "Drinking and Life Expectancy: What’s the Safe Limit?", date: "2018-04-13", platform: "知社学术圈" },
+  { zhTitle: "中国学者揭示衰老的遗传基础和雄风长驻之秘密", enTitle: "Chinese Scientists Uncover Genetic Basis of Aging and Secrets of Longevity", date: "2017-11-09", platform: "知社学术圈" },
+  { zhTitle: "多吃蔬果无益，高脂膳食更健康？两篇《柳叶刀》论文遭多位权威学者批评", enTitle: "Are Fruits and Vegetables Overrated? Why The Lancet’s High-Fat Diet Papers Sparked Backlash", date: "2017-09-05", platform: "知识分子" },
+  { zhTitle: "不要打扰睡着的婴儿，他们正在“学习”", enTitle: "Don’t Wake Sleeping Babies: Their Brains Are Busy Learning", date: "2017-08-30", platform: "知识分子" },
+  { zhTitle: "RNA好累：可编码的“非编码RNA”", enTitle: "Exhausted RNA: The Paradox of “Coding” Non-Coding RNA", date: "2016-11-01", platform: "赛先生" },
+  { zhTitle: "“学问是老婆的好，老婆是自己的好”——专访浙江大学王志萍、郭行夫妇 | 科研伉俪", enTitle: "Scholarship and Love: An Interview with Zhejiang University’s Scientific Couple Wang Zhiping & Guo Xing", date: "2016-08-06", platform: "赛先生" },
+  { zhTitle: "独家专访 Cell Research 常务副主编李党生：从事科学编辑是无比正确的决定", enTitle: "Exclusive Interview: Li Dangsheng, Deputy Editor of Cell Research, on Choosing Science Editing as a Career", date: "2016-08-05", platform: "赛先生" },
+  { zhTitle: "到底哪一类脂肪对你有害？", enTitle: "Which Type of Fat Is Truly Harmful?", date: "2016-07-22", platform: "赛先生" },
+  { zhTitle: "大数据告诉你哪些基因参与Ⅱ型糖尿病的遗传", enTitle: "Big Data Reveals Genes Involved in Type 2 Diabetes", date: "2016-07-21", platform: "赛先生" },
+  { zhTitle: "打造一部冲向癌细胞的战车：肿瘤免疫疗法之 CAR-T 细胞疗法", enTitle: "Building a War Chariot Against Cancer: CAR-T Cell Therapy", date: "2016-03-11", platform: "赛先生" }
+];
+
+// 页面初始化
+let currentLang = "zh";
+function renderArticles() {
+  const container = document.getElementById("articles");
+  const list = document.getElementById("moreList");
+  container.innerHTML = "";
+  list.innerHTML = "";
+  articlesData.forEach((art,i)=>{
+    const articleHTML = `
+      <article id="article${i}">
+        <h3>${currentLang === 'zh'? art.zhTitle : art.enTitle}</h3>
+        <p><strong>摘要 / Abstract:</strong> ${currentLang === 'zh'? art.zhAbstract : art.enAbstract || art.zhAbstract}</p>
+        <p><a href="${art.link}" target="_blank">${currentLang==='zh'?'阅读全文':'Read More'}</a></p>
+      </article>`;
+    container.innerHTML += articleHTML;
+
+    const listItem = `<li><a href="#article${i}">${currentLang==='zh'? art.zhTitle : art.enTitle}</a></li>`;
+    list.innerHTML += listItem;
+  });
+}
+
+// 切换语言
+function toggleLanguage() {
+  currentLang = currentLang === "zh" ? "en" : "zh";
+  document.getElementById("langBtn").innerText = languageData[currentLang].langBtn;
+  document.getElementById("page-title").innerText = currentLang==="zh"? "李娟博士科普作品集":"Juan Li PhD Science Articles";
+  document.getElementById("page-subtitle").innerText = currentLang==="zh"? "Science Communication & Articles by Juan Li, PhD":"Science Communication & Articles by Juan Li, PhD";
+  document.getElementById("section-featured").innerText = languageData[currentLang].sectionFeatured;
+  document.getElementById("section-more").innerText = languageData[currentLang].sectionMore;
+  document.getElementById("section-about").innerText = languageData[currentLang].sectionAbout;
+  document.getElementById("about").innerHTML = languageData[currentLang].aboutText;
+  renderArticles();
+}
+
+// 初始渲染
+renderArticles();
+document.getElementById("about").innerHTML = languageData.zh.aboutText;
+</script>
+
 </body>
 </html>
